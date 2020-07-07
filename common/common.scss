@@ -1,0 +1,112 @@
+#nav-link-container {
+  display: flex;
+  position: relative;
+  padding: 0;
+  margin: 0 0 0 35px;
+  list-style: none;
+
+  > li {
+    margin-right: 25px;
+  }
+
+  a {
+    text-transform: none;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 3px;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  .nav-link-submenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    transition: opacity 0.4s ease-in-out 0s;
+    z-index: 1;
+
+    > li > a, > li > button {
+      text-align: left;
+      color: $primary;
+      display: block;
+      box-sizing: border-box;
+    }
+  }
+
+  .dropdown {
+    display: flex;
+    position: relative;
+
+    a, button {
+      color: $primary;
+      background-color: $header_background;
+      
+      &:hover {
+        background-color: darkslategrey;
+      }
+     }
+
+    &:hover {
+      > a {
+        overflow: visible;
+        z-index: 1000;
+        color: $header_background;
+        background-color: $primary;
+        border-start-start-radius: 2px;
+        border-start-end-radius: 2px;
+        border-end-start-radius: 2px;
+        border-end-end-radius: 0px;
+      }
+
+      .nav-link-submenu  {
+
+        display: block;
+        background-color: $secondary;
+        border-end-end-radius: 2px;
+        border-end-start-radius: 2px;
+        border-top: solid 1px $primary;
+        border-right: solid 1px $primary;
+        border-bottom: solid 1px $primary;
+        border-left: solid 1px $primary;
+
+        button {
+          border: none;
+          padding: 0!important;
+          cursor: pointer;
+          color: $primary;
+          background-color: $secondary;
+          
+          &:hover {
+           background-color: darkslategrey;
+          }
+        }
+      }
+    }
+
+    a {
+      margin-right: 3px;
+      padding: 3px;
+      line-height: 1.75em;
+      svg {
+        font-size: 1.2em;
+        margin-right: 2px;
+      }
+    }
+  }
+}
+
+.dropdown-toggle {
+  float: right;
+  background: none;
+  color: inherit;
+  border: none;
+  float: unset;
+  padding: 0;
+
+  &::after {
+    margin: 3px;
+    color: $secondary;
+  }
+}

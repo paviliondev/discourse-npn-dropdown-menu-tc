@@ -1,0 +1,6 @@
+npn_dropdown_menu_links:
+  default: ''
+  type: list
+  description:
+    en: 'Dropdown Menu Links:  Comma delimited in this order: Icon name, Text,URL.<br><b>Icon:</b> the name of the Fontawesome icon to be used<br><b>Text:</b>.<br><b>URL:</b> the path for the link.'
+    

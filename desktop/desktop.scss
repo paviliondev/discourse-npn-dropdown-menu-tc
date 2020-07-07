@@ -1,0 +1,22 @@
+#nav-link-container .nav-link-submenu {
+  top: 32px;
+  left: 10px;
+  min-width: 208px;
+  margin: 0;
+
+  > li > button {
+    margin: 0 0 0 10px;
+  }
+
+  > li > a, > li > button {
+    padding: 0 15px 0 10px;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 2em;;
+
+    &:hover {
+      border-radius: 3px;
+    }
+  }
+}

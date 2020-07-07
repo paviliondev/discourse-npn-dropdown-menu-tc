@@ -1,0 +1,11 @@
+{
+    "name": "NPN Dropdown Menu",
+    "about_url": null,
+    "license_url": null,
+    "component": true,
+    "authors": "merefield@gmail.com",
+    "modifiers": {
+      "svg_icons": ["image", "comments","images","plus"]
+    }
+  }
+  
