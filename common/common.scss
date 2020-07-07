@@ -1,3 +1,5 @@
+@import "variables";
+
 #nav-link-container {
   display: flex;
   position: relative;
@@ -29,7 +31,7 @@
 
     > li > a, > li > button {
       text-align: left;
-      color: $primary;
+      color: $npn-gold;
       display: block;
       box-sizing: border-box;
     }
@@ -40,7 +42,7 @@
     position: relative;
 
     a, button {
-      color: $primary;
+      color: $npn-gold;
       background-color: $header_background;
       
       &:hover {
@@ -53,7 +55,7 @@
         overflow: visible;
         z-index: 1000;
         color: $header_background;
-        background-color: $primary;
+        background-color: $npn-gold;
         border-start-start-radius: 2px;
         border-start-end-radius: 2px;
         border-end-start-radius: 2px;
@@ -63,13 +65,13 @@
       .nav-link-submenu  {
 
         display: block;
-        background-color: $secondary;
+        background-color: $npn-gold;
         border-end-end-radius: 2px;
         border-end-start-radius: 2px;
-        border-top: solid 1px $primary;
-        border-right: solid 1px $primary;
-        border-bottom: solid 1px $primary;
-        border-left: solid 1px $primary;
+        border-top: solid 1px $npn-gold;
+        border-right: solid 1px $npn-gold;
+        border-bottom: solid 1px $npn-gold;
+        border-left: solid 1px $npn-gold;
 
         button {
           border: none;

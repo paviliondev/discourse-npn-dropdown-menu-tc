@@ -5,7 +5,7 @@
     "component": true,
     "authors": "merefield@gmail.com",
     "modifiers": {
-      "svg_icons": ["image", "comments","images","plus"]
+      "svg_icons": ["image", "comments","images","plus", "comment-alt-edit"]
     }
   }
   

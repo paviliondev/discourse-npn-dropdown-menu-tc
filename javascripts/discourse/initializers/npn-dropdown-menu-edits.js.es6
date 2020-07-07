@@ -82,10 +82,7 @@ export default {
                                                 iconNode("image"),
                                                 iconNode("comments"),
                                                 h('span.menu-title-text', 'New Photo/Discussion')]
-                                             )),
-                                              h('button.dropdown-toggle#header-menu-toggle',
-                                                { onclick: subMenuClickHandler },
-                                                iconNode("chevron-down", { class: "chevron-down" }))];
+                                             ))];
 
             menu_buffer.push(h('ul.nav-link-submenu', menu_links_buffer));
 
