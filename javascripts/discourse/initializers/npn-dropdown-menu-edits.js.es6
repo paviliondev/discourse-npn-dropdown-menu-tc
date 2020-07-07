@@ -40,6 +40,11 @@ export default {
               const container = Discourse.__container__;
               const controller = container.lookup("controller:navigation/category");
               const composerController = container.lookup("controller:composer");
+              const category = controller.get("category.id");
+              const topicCategory = container
+                .lookup("route:topic")
+                .get("context.category.id");
+              const categoryId = topicCategory ? topicCategory : category;
 
               if (!Discourse.currentUser) {
                 DiscourseURL.routeTo('/login');
@@ -48,6 +53,7 @@ export default {
 
               composerController.open({
                 action: Composer.CREATE_TOPIC,
+                categoryId: categoryId,
                 draftKey: Composer.DRAFT,
               });
             };
