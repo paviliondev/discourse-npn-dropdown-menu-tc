@@ -46,7 +46,7 @@
       background-color: $header_background;
       
       &:hover {
-        background-color: darkslategrey;
+        background-color: $npn-main-background;
       }
      }
 
@@ -81,7 +81,7 @@
           background-color: $secondary;
           
           &:hover {
-           background-color: darkslategrey;
+           background-color: $npn-main-background;
           }
         }
       }
