@@ -1,10 +1,20 @@
+.anon #nav-link-container {
+  display: none;
+}
+
+#nav-link-container {
+  left: -25%;
+  top: 5px;
+  width: 0px;
+}
+
 #nav-link-container .nav-link-submenu {
 
   top: 32px;
-  left: 10px;
-  min-width: 198px;
+  left: -50px;
+  min-width: 200px;
   margin: 0;
- 
+
   > li > button {
     margin: 0 0 0 0px;
   }
@@ -20,11 +30,4 @@
       border-radius: 3px;
     }
   }
-}
-
-#nav-link-container {
-  position: fixed;
-  left: 40%;
-  transform: translateX(-40%);
-  top: 10px;
 }

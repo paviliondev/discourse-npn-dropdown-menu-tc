@@ -1,10 +1,13 @@
 @import "variables";
 
 #nav-link-container {
-  display: flex;
+  float: left;
   position: relative;
   padding: 0;
-  margin: 0 0 0 35px;
+  margin: 0 0px 0 0px;
+  left: 0px;
+  top: 0px;
+  width: 240px;
   list-style: none;
 
   > li {
@@ -15,14 +18,24 @@
     text-transform: none;
     text-decoration: none;
     font-size: 15px;
-    margin-right: 3px;
+    padding-right: 3px;
+
+    svg {
+      width: 1em;
+      padding-right: 3px;
+      font-size: 15px;
+      color: inherit;
+      background-color: inherit;
+    }
 
     &:hover {
-      color: $secondary;
+      background-color: $npn-main-background;
     }
   }
 
+
   .nav-link-submenu {
+
     display: none;
     position: absolute;
     list-style: none;
@@ -44,9 +57,9 @@
     a, button {
       color: $npn-gold;
       background-color: $header_background;
-      
+
       &:hover {
-        background-color: $npn-main-background;
+        color: $secondary;
       }
      }
 
@@ -73,15 +86,18 @@
         border-bottom: solid 1px $npn-gold;
         border-left: solid 1px $npn-gold;
 
-        button {
-          border: none;
-          padding: 0!important;
+        button, a, li {
           cursor: pointer;
-          color: $primary;
+          color: $npn-gold;
           background-color: $secondary;
-          
+
           &:hover {
            background-color: $npn-main-background;
+           color: $npn-gold;
+           border-end-end-radius: 0px;
+           border-end-start-radius: 0px;
+           border-start-end-radius: 0px;
+           border-start-start-radius: 0px;
           }
         }
       }
@@ -91,16 +107,22 @@
       margin-right: 3px;
       padding: 3px;
       line-height: 1.75em;
-      svg {
-        font-size: 1.2em;
-        margin-right: 2px;
+
+      .menu-title {
+        svg {
+          font-size: 1.2em;
+          padding-left: 2px;
+          padding-right: 2px;
+          width: 1em;
+          color: inherit;
+        }
       }
     }
   }
 }
 
 .dropdown-toggle {
-  float: right;
+  float: left;
   background: none;
   color: inherit;
   border: none;

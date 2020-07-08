@@ -12,7 +12,7 @@ export default {
   initialize (container) {
     withPluginApi ('0.8.24', function (api) {
 
-        api.decorateWidget('home-logo:after', helper => {
+        api.decorateWidget('header-icons:before', helper => {
             const showExtraInfo = helper.attrs.minimized;
             const currentUser = api.getCurrentUser();
             const mobileView = helper.widget.site.mobileView;
