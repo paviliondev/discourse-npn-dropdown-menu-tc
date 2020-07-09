@@ -77,7 +77,7 @@ export default {
 
             menu_links_buffer.push (
                 h('li', [h('a.submenu-open-composer',
-                { onclick: openComposerClickHandler }, [iconNode("plus"), 'Classic Composer'])
+                { onclick: openComposerClickHandler }, [iconNode("plus"), I18n.t(themePrefix("pull_up_composer_entry_string"))])
                 ])
             );
 
@@ -87,7 +87,7 @@ export default {
                                                h('span.menu-title', [
                                                 iconNode("image"),
                                                 iconNode("comments"),
-                                                h('span.menu-title-text', 'New Photo/Discussion')]
+                                                h('span.menu-title-text', I18n.t(themePrefix("menu_title_string")))]
                                              ))];
 
             menu_buffer.push(h('ul.nav-link-submenu', menu_links_buffer));
