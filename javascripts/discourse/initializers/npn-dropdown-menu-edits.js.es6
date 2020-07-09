@@ -77,7 +77,7 @@ export default {
 
             menu_links_buffer.push (
                 h('li', [h('a.submenu-open-composer',
-                { onclick: openComposerClickHandler }, [iconNode("plus"), I18n.t(themePrefix("pull_up_composer_entry_string"))])
+                { onclick: openComposerClickHandler }, [iconNode("plus"), I18n.t(themePrefix("composer_entry_string"))])
                 ])
             );
 
