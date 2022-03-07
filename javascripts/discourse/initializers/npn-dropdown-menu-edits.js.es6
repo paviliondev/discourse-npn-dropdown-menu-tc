@@ -46,7 +46,7 @@ export default {
                 .get("context.category.id");
               const categoryId = topicCategory ? topicCategory : category;
 
-              if (!Discourse.currentUser) {
+              if (!currentUser) {
                 DiscourseURL.routeTo('/login');
                 return;
               }
