@@ -16,6 +16,7 @@ export default {
             const showExtraInfo = helper.attrs.minimized;
             const currentUser = api.getCurrentUser();
             const mobileView = helper.widget.site.mobileView;
+            const forceMobileMenu = settings.npn_force_mobile_menu;
 
             const menuClickHandler = () =>  {
             let $navLinkContainer = $('#nav-link-container');
@@ -81,7 +82,7 @@ export default {
                 ])
             );
 
-            let menu_buffer = mobileView ? [h('a.nav-link.submenu',
+            let menu_buffer = mobileView || forceMobileMenu ? [h('a.nav-link.submenu',
                                                h('span.menu-title', iconNode("plus")))] :
                                              [h('a.nav-link.submenu',
                                                h('span.menu-title', [
