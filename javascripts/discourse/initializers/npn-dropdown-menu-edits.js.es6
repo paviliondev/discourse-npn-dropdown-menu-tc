@@ -76,18 +76,11 @@ export default {
               }
             };
 
-            menu_links_buffer.push (
-                h('li', [h('a.submenu-open-composer',
-                { onclick: openComposerClickHandler }, [iconNode("plus"), I18n.t(themePrefix("composer_entry_string"))])
-                ])
-            );
-
             let menu_buffer = mobileView || forceMobileMenu ? [h('a.nav-link.submenu',
                                                h('span.menu-title', iconNode("plus")))] :
                                              [h('a.nav-link.submenu',
                                                h('span.menu-title', [
-                                                iconNode("image"),
-                                                iconNode("comments"),
+                                                iconNode("plus"),
                                                 h('span.menu-title-text', I18n.t(themePrefix("menu_title_string")))]
                                              ))];
 
